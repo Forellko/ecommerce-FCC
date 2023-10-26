@@ -28,7 +28,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       </figure>
       <div className="card-body">
         <h2 className="card-title">
-          {product.name}{" "}
+          {product.name}
           {isNew && <div className="badge badge-secondary">NEW</div>}
         </h2>
         <p>{product.description}</p>
