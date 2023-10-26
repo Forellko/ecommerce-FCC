@@ -7,4 +7,13 @@ type FormSubmitButtonProps = {
   className?: string;
 } & ComponentProps<"button">;
 
-export default function FormSubmitButton() {}
+export default function FormSubmitButton({
+  children,
+  className,
+}: FormSubmitButtonProps) {
+  return (
+    <button className={`btn btn-primary ${className}`} type="submit">
+      {children}
+    </button>
+  );
+}
