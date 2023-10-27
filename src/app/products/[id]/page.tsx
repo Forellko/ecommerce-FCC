@@ -44,7 +44,7 @@ export default async function ProductPage({
         alt={product.name}
         width={500}
         height={500}
-        className="rounded-lg"
+        className="h-72 rounded-lg object-cover"
         priority
       />
       <div>
