@@ -17,7 +17,7 @@ export default function PaginationBar({
   for (let page = minPage; page <= maxPage; page++) {
     numberedPageItems.push(
       <Link
-        href={"?/page=" + page}
+        href={"?page=" + page}
         key={page}
         className={`btn join-item ${
           currentPage === page ? "btn-active pointer-events-none" : ""
