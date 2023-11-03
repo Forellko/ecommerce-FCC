@@ -25,6 +25,7 @@ export const authOptions: NextAuthOptions = {
       await mergeAnonymousCartIntoUserCart(user.id);
     },
   },
+  secret: process.env.NEXT_AUTH_SECRET,
 };
 
 const handler = NextAuth(authOptions);
